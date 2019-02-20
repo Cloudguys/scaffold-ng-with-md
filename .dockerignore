@@ -9,15 +9,17 @@ Dockerfile
 .env
 .git
 .gitignore
-.vs
-.vscode
+*.log*
 
 # compiled output
 /tmp
 /out-tsc
+/dist
 
 # dependencies
 /node_modules
+package-lock.json
+yarn.lock
 
 # IDEs and editors
 /.idea
@@ -27,22 +29,13 @@ Dockerfile
 *.launch
 .settings/
 *.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+/.vs
+/.vscode
 
 # misc
 /.sass-cache
 /connect.lock
 /coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
 /typings
 
 # System Files
