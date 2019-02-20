@@ -1,0 +1,8 @@
+version: '2.1'
+
+services:
+  awaoa:
+    image: awaoa:latest
+    build: .
+    ports:
+      - 80:80
