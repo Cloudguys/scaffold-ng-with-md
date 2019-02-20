@@ -2,47 +2,59 @@
 
 This is a scaffold project built with Angular and Materail Design, aiming to reduce the repeat work if you want to build powerful applications in a real short time.
 
+## Road Map
+
+## Directory Dtructure:
+```
+scaffold-ng-with-md
+ |
+ +--_nginx
+ | |
+ | +--default.conf
+ |
+ +--e2e
+ |
+ +--src
+
+```
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+You need node.js to use this scaffold, you can get it [here](https://www.npmjs.com)
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+This project is a code-ready scaffold, so you just clone it, open it with your favorite editor([Visual Studio Code]() is recommended), and start coding.
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+If you want to run your code, don't forget to restore our dependencies:
 
 ```
-until finished
+// restore dependencies:
+npm install 
+
+// or if you prefer yarn:
+yarn install
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+And after the installation, start your project:
+
+```
+npm start
+```
+
+access *http://localhost:5000* to enjoy your applcation.
 
 ## Running the tests
 
-Explain how to run the automated tests for this system
+// TODO
 
 ### Break down into end to end tests
 
-Explain what these tests test and why
-
-```
-Give an example
-```
+// TODO
 
 ### And coding style tests
 
@@ -52,9 +64,18 @@ Explain what these tests test and why
 Give an example
 ```
 
+## Intergration
+
+There are several way of Integration, you can make your own choice, yet we've prepared dockerfile, docker compose file and azure-pipelines for you, checkout the root direcotry.
+
+
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+You can use any way of Deployment you want.If you like Azure DevOps, we've already created a yaml file for you under the root directory.
+
+```
+azure-pipelines.yaml
+```
 
 ## Built With
 
