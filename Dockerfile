@@ -11,10 +11,10 @@ WORKDIR /src
 
 # for east asia user, you can uncomment the following lines
 # to speed up the installation of the dependencies
-RUN printf "sass_binary_site=https://npm.taobao.org/mirrors/node-sass\nphantomjs_cdnurl=https://npm.taobao.org/mirrors/phantomjs\nelectron_mirror=https://npm.taobao.org/mirrors/electron\nregistry=https://registry.npm.taobao.org" > ~/.npmrc
+# RUN printf "sass_binary_site=https://npm.taobao.org/mirrors/node-sass\nphantomjs_cdnurl=https://npm.taobao.org/mirrors/phantomjs\nelectron_mirror=https://npm.taobao.org/mirrors/electron\nregistry=https://registry.npm.taobao.org" > ~/.npmrc
 
 COPY package.json package.json
-# RUN npm install
+RUN npm install
 
 COPY . .
 RUN npm run build
