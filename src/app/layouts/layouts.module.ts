@@ -15,6 +15,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContentContainerComponent } from './components/content-container/content-container.component';
 import { RootLayoutComponent } from './components/root-layout/root-layout.component';
+import { SidebarMenuComponent } from './components/sidebar/sidebar-menu/sidebar-menu.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { RootLayoutComponent } from './components/root-layout/root-layout.compon
     FooterComponent,
     RootLayoutComponent,
     ContentContainerComponent,
+    SidebarMenuComponent,
   ],
   imports: [
     CommonModule,

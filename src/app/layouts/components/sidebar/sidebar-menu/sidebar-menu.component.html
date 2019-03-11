@@ -1,0 +1,22 @@
+<nav>
+  <mat-menu #home="matMenu">
+    <button mat-menu-item>
+      <mat-icon>feedback</mat-icon>
+      <span>Feedback</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>help</mat-icon>
+      <span>Documentation</span>
+    </button>
+  </mat-menu>
+
+  <button mat-menu-item>
+    <mat-icon>dashboard</mat-icon>
+    <span>Dashboard</span>
+  </button>
+
+  <button mat-menu-item [matMenuTriggerFor]="home">
+    <mat-icon>home</mat-icon>
+    <span>Home</span>
+  </button>
+</nav>
