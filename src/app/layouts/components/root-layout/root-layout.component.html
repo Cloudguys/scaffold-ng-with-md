@@ -1,15 +1,8 @@
-<header>
-  <app-header></app-header>
-</header>
+<app-header></app-header>
 
-<mat-drawer-container>
-  <mat-drawer mode="side" opened>
-    <app-sidebar></app-sidebar>
-  </mat-drawer>
-  <mat-drawer-content>
-    <app-content-container></app-content-container>
-  </mat-drawer-content>
-  <footer>
-    <app-footer></app-footer>
-  </footer>
-</mat-drawer-container>
+<mat-sidenav-container class="sidenav-container">
+  <app-sidebar></app-sidebar>
+  <app-content-container></app-content-container>
+</mat-sidenav-container>
+
+<app-footer></app-footer>
